@@ -1,0 +1,53 @@
+Monday, May 19 (hours worked: )
+Morning:
+Afternoon:
+
+Tuesday, May 20 (hours worked: )
+Morning:
+Afternoon:
+
+Wednesday, May 21 (hours worked: )
+Morning:
+Afternoon:
+
+Thursday, May 22 (hours worked: )
+Morning: I read all documentation in the FlatBuffers Docs. I learned about the schema, implementation, and supported languages. I also watched a few videos from Google about
+their Flatbuffers
+Afternoon: I read all the documentation in the Protocol Buffers Docs. I practiced, on paper, taking a .proto schema to a .fbs schema. 
+Also practices taking a .fbs schema to a .proto schema. I learned about the schema, implementation, and supported languages. 
+
+Friday, May 23 (hours worked: )
+Morning: learned about and practiced using gRPC and protobufs by using a few simple examples. Reviewed a repository on C++ serialization protocols that compared performance and showed a simple how tos. This was very helpful
+as it let me set up and practice generating C++ serialization/deserialization code from these provided schemas. 
+Afternoon: Did a codeacademy intermediate git course. I chose to do the intermediate after taking Belcans benchmark test where it provides a score and recommendation. I learned about cherry-picking, restoring files, and rebasing. I practiced
+in a faux repo I made. 
+
+Monday, May 26 (hours worked: 0)
+Morning: Memorial Day
+Afternoon: Memorial Day 
+
+Tuesday, May 27 (hours worked: 8 )
+Morning: I finished the intermediate C# codeacademy course.I Spoke with Mark in the morning and he got me set up on the lab laptop so I could use Visual Studio. I began writing a .proto parser. 
+The parser takes in a proto schema file and creates a C++ object of that file with structs for enums, messages, fields, and vectors. I tried to get it running in visual studio but it had some bugs. 
+Afternoon: I watched a few quick videos on using Visual Studio as I've always using JetBrains IDEs or the terminal. I practiced debugging using built in visual studio tools. I was able to finish the proto parser. 
+I commented it out and sent it to Mark for review. I finished the day reviewing how flatc works with flatbuffer schemas. 
+
+Wednesday, May 28 (hours worked: 8 )
+Morning: I added to my .proto parser so it can handle nested messages. I did this by modifying the messages struct so it held the bool nested and added a vector of other message structs called nestedMessages.
+In the parseMessages function, I recursively called parseMessages to maintain message hierarchy. I read some C++ documentation to learn about unordered maps and string builders. I also communicated with Mark and 
+reviewed feedback from previous day's proto parser. 
+Afternoon: I reviewed the resources Mark sent me. I installed Visual Studio Community 2019 on the lab laptop. I worked on writing some C++ code that takes a flatbuffer reflection schema and turns it into protobuf descriptor data containing:
+fb reflection enums -> pb EnumDescriptorProto structs 
+fb reflection tables -> pb DescriptorProto structs aka messages 
+fb reflection field -> pb FieldDescriptorProto structs
+fb reflection vectors -> pb repeated fields
+fb BaseType -> pb FieldDescriptorProto::Type
+I then sent this code to Mark for review and practiced manipulating schemas using C# for the remainder of the day. 
+
+Thursday, May 29 (hours worked: )
+Morning:
+Afternoon:
+
+Friday, May 30 (hours worked: )
+Morning:
+Afternoon:

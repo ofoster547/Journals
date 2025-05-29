@@ -44,10 +44,23 @@ fb reflection vectors -> pb repeated fields
 fb BaseType -> pb FieldDescriptorProto::Type
 I then sent this code to Mark for review and practiced manipulating schemas using C# for the remainder of the day. 
 
-Thursday, May 29 (hours worked: )
-Morning:
+Thursday, May 29 (hours worked: 8)
+Morning: I generated C# accessors from .fbs files using flatc. I also made .bfbs files and binary files from these .fbs files using flatc. I added this all to a C# visual studio project path. I then wrote C# code to traverse and print out the .fbs elements from these generated .bfbs files. I also generated the C# code from the reflection.fbs github using flatc. Had quite a nasty bug trying to get the BaseType from Type but eventually figured that out and was able to get BaseType from Type. 
+Afternoon: Instead of just traversing the .bfbs files, I created C# data types to hold equal .proto objects. I then formatted these .proto objects into eqivalent files and wrote them to a protos directory. This was all done in a large main method so I added in abstraction by making a FBStoProto class and corresponding functions for reading the passed .bfbs files, mapping to enums, mapping to messages, unions to one-ofs, and so on. I finished the day by testing some edge cases to ensure proto output was still correct. 
+
+
+
 Afternoon:
 
 Friday, May 30 (hours worked: )
-Morning:
+Morning: Fix nested stuff
+
+
+
 Afternoon:
+
+
+
+Comments:
+
+We get holiday pay here as full time Co-Ops. Yayyyyyy!! 
